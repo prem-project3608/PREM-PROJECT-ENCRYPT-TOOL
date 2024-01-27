@@ -1,2 +1,88 @@
-import marshal,zlib,base64
-exec(marshal.loads(zlib.decompress(base64.b64decode("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"))))
+#!/usr/bin/python3
+#-*- coding: utf-8 -*-
+#marshal py3
+
+'''
+PyMarshal - Compile Python Script
+THIS PROJECT WAS CREATER BY MR PREM PROJECT
+Copyright 12 - 07 - 2k19 @prem_babu_3608
+'''
+
+try:
+        import os,sys,time,marshal
+except Exception as F:
+        exit("[ModuleErr] %s"%(F))
+        
+if sys.version[0] in '2':
+        exit("[ PREM-PROJECT ] USED PYTHON VERSION 3")
+
+# Color
+a='\033[1;30m'
+r='\033[1;31m'
+g='\033[32;1m' 
+y='\033[1;33m'
+c='\033[1;36m' 
+w='\033[1;37m' 
+n='\033[0;00m' 
+br='\033[91;7m' 
+
+bannerpy3 = """
+ (   (         *                              
+ )\ ))\ )    (  `       (    (      (         
+(()/(()/((   )\))(    ( )\   )\   ( )\    (   
+ /(_))(_))\ ((_)()\   )((_|(((_)( )((_)   )\  
+(_))(_))((_)(_()((_) ((_)_ )\ _ )((_)_ _ ((_) 
+| _ \ _ \ __|  \/  |  | _ )(_)_\(_) _ ) | | | 
+|  _/   / _|| |\/| |  | _ \ / _ \ | _ \ |_| | 
+|_| |_|_\___|_|  |_|  |___//_/ \_\|___/\___/  
+                                              
+==============================================
+            WELCOME TO PREM PROJECT
+==============================================
+[✓] OWNER NAME ==> MR PREM BABU JI
+[✓] CODED NAME ==> @prem_babu_3608
+[✓] VERSION    ==> PREM-PYTHON-3
+[✓] WHATSAPP   ==> +91 7009799979
+[✓] YOUTUBE    ==> PREM PROJECT
+[✓] FACEBOOK   ==> facebook.com/prembabu001
+==============================================
+""".format(r,y,br,n,y,w,r,w,y,br,n,y,w,r,w,y,br,n,y,w,r,w,y,r,a)
+
+'''
+CODED    ==> @prem_babu_3608
+MY NAME  ==> PREM BABU
+WHATSAPP ==> 7009799979
+YOUTUBE  ==> PREM PROJECT
+FACEBOOK ==> facebook.com/prembabu001
+NOTICE   ==> THIS TOOL IS MADE BY MR PREM BABU
+'''
+
+os.system('clear')
+try:
+    print(bannerpy3)
+    print (y+' ['+w+'+'+y+'] '+w+'EXAMPLE '+y+'   >>>'+w+' /sdcard/prem.py')
+    file = input(y+' ['+w+'+'+y+'] '+w+'INPUT FILE'+y+'  >>>'+w+' ')
+    o = file.replace('.py', '')
+except KeyboardInterrupt:
+    sys.exit()
+else:
+    try:
+        strng = open(file, 'r').read()
+    except IOError:
+        print (r+'\n ['+w+'×'+r+'] '+r+'[ '+w+'ERROR '+r+'] '+w+'THIS FILE IS WRONG '+r+'>>> '+w+'"'+dfv+'"\n')
+        sys.exit()
+    try:
+        code = compile(strng,'','exec')
+        data = marshal.dumps(code)
+    except TypeError:
+        print (R + '   ['+W+'×'+R+'] '+R+'[ '+W+'FILE ALLREDY TO ENCRIPTION BY PREM PROJECT\n') 
+        sys.exit()
+
+fileout = open(o + 'enc.py', 'w')
+fileout.write('#ENCRYPTION BY MR PREM PROJECT\n')
+fileout.write('#FACEBOOK => facebook.com/prembabu001\n')
+fileout.write('import marshal\n')
+fileout.write('exec(marshal.loads(' + repr(data) + '))')
+fileout.close()
+time.sleep(3) 
+print (y+'\n ['+w+'✓'+y+'] '+w+'FILE SUCCESS TO ENCRIPTION BY MR PREM BABU   '+y+'>>> ' + w + o + 'enc.py\n')
