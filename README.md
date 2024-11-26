@@ -14,7 +14,14 @@
 ```bash
 git clone https://github.com/prem-project3608/PREM-PROJECT-ENCRYPT-TOOL.git
 ```
+
 ```bash
 cd PREM-PROJECT-ENCRYPT-TOOL                           ```
+
 ```bash
-python
+python2 PREM-PYTHON-2.py 
+```
+
+```bash
+python3 PREM-PYTHON-3.py
+```
